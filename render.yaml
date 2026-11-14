@@ -1,0 +1,34 @@
+# ==============================================================================
+# Render.com Infrastructure Blueprint
+# Deploys AI Project Evaluator as a Full-Stack Docker Web Service
+# ==============================================================================
+services:
+  - type: web
+    name: ai-project-evaluator
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 8000
+      - key: GEMINI_API_KEY
+        sync: false # Enter in Render Dashboard (Environment tab)
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: GEMINI_TIMEOUT_SECONDS
+        value: 15.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DATABASE_NAME
+        value: ai_project_evaluator_db
+      # Optional: Add MongoDB Atlas connection string if external cloud DB is preferred
+      # - key: MONGODB_URL
+      #   sync: false

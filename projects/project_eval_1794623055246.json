@@ -1,0 +1,36 @@
+{
+  "id": "eval_1794623055246",
+  "user_id": "usr_1794623055",
+  "isDemo": false,
+  "title": "Bob Drone Crop Pathology on Edge",
+  "description": "Edge computing YOLOv8 model running on drone Raspberry Pi 4.",
+  "problemStatement": "Manual farm surveying leads to delayed pest detection.",
+  "domain": "Computer Vision & Autonomous Robotics",
+  "targetUsers": "Smallholder farmers",
+  "technologies": "Python, YOLOv8, OpenCV, Raspberry Pi",
+  "model": "Python",
+  "hardware": "Target: $300 - $1,000",
+  "dataset": "Proposed Project Data Pipeline",
+  "budget": "$300 - $1,000 (Moderate)",
+  "timeline": "3 - 4 Months (One-Semester Capstone)",
+  "teamSize": "Small Capstone Team (3 - 4 Students)",
+  "skillLevel": "Intermediate",
+  "feasibilityScore": 69,
+  "riskLevel": "Moderate Risk",
+  "riskColor": "text-amber-500 bg-amber-500/10 border-amber-500/30",
+  "primaryRisk": "Edge CPU inference latency (>2,500ms) will drop frames below real-time operational thresholds.",
+  "fixes": [
+    "Export model weights to ONNX / TensorRT with INT8 quantization for sub-60ms edge inference.",
+    "Implement automated unit testing for ML pipeline preprocessing steps.",
+    "Set up cross-validation splits stratified by category to prevent data leakage."
+  ],
+  "radarScores": {
+    "memory_feasibility": 65,
+    "latency_feasibility": 40,
+    "data_integrity": 80,
+    "cost_viability": 80,
+    "team_capability": 88
+  },
+  "evaluatedAt": "2026-11-14 01:24 PM",
+  "saved_at": "2026-11-14T13:24:15.246608"
+}

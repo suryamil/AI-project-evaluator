@@ -1,0 +1,34 @@
+{
+  "id": "eval_1794642204748",
+  "isDemo": false,
+  "title": "Hospital ICU Bedside Arrhythmia Warning",
+  "description": "Continuous 12-lead ECG waveform anomaly detector using 1D-ResNet architecture.",
+  "problemStatement": "Delayed identification of ventricular tachycardia in intensive care units leads to patient mortality.",
+  "domain": "Artificial Intelligence & Deep Learning",
+  "targetUsers": "ICU nurses and resident cardiologists",
+  "technologies": "PyTorch, 1D-ResNet, FastAPI, Docker, NVIDIA RTX 4000",
+  "model": "PyTorch",
+  "hardware": "Target: $1,000 - $3,000",
+  "dataset": "Proposed Project Data Pipeline",
+  "budget": "$1,000 - $3,000 (Department Funded)",
+  "timeline": "5 - 8 Months (Senior Thesis)",
+  "teamSize": "Pair Programming Team (2 Students)",
+  "skillLevel": "Advanced (Hands-on PyTorch)",
+  "feasibilityScore": 82,
+  "riskLevel": "Low Risk",
+  "riskColor": "text-emerald-500 bg-emerald-500/10 border-emerald-500/30",
+  "primaryRisk": "Minor throughput degradation under peak concurrency; monitor memory ceilings.",
+  "fixes": [
+    "Implement automated unit testing for ML pipeline preprocessing steps.",
+    "Set up cross-validation splits stratified by category to prevent data leakage."
+  ],
+  "radarScores": {
+    "memory_feasibility": 65,
+    "latency_feasibility": 75,
+    "data_integrity": 90,
+    "cost_viability": 95,
+    "team_capability": 93
+  },
+  "evaluatedAt": "2026-11-14 01:13 PM",
+  "saved_at": "2026-11-14T13:13:24.751790"
+}

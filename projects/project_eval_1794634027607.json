@@ -1,0 +1,42 @@
+{
+  "id": "eval_1794634027607",
+  "user_id": "usr_1794633996823",
+  "isDemo": false,
+  "title": "Quantum ML Variational Circuit Optimizer",
+  "description": "A novel quantum-classical hybrid optimizer for deep variational parameterized circuits.",
+  "problemStatement": "Barren plateaus in high-dimensional quantum landscapes prevent effective convergence.",
+  "domain": "Machine Learning",
+  "targetUsers": "Quantum ML Researchers and Engineers",
+  "technologies": "Python, Qiskit, PyTorch, CUDA",
+  "model": "Python",
+  "hardware": "Target: $300 - $1,000",
+  "dataset": "Proposed Project Data Pipeline",
+  "budget": "$300 - $1,000",
+  "timeline": "3 - 4 Months",
+  "teamSize": "Small Capstone Team (3 - 4 Students)",
+  "skillLevel": "Advanced",
+  "feasibilityScore": 81,
+  "riskLevel": "Low Risk",
+  "riskColor": "text-emerald-500 bg-emerald-500/10 border-emerald-500/30",
+  "primaryRisk": "Minor throughput degradation under peak concurrency; monitor memory ceilings.",
+  "fixes": [
+    "Implement automated unit testing for ML pipeline preprocessing steps.",
+    "Set up cross-validation splits stratified by category to prevent data leakage."
+  ],
+  "radarScores": {
+    "memory_feasibility": 75,
+    "latency_feasibility": 75,
+    "data_integrity": 80,
+    "cost_viability": 80,
+    "team_capability": 98
+  },
+  "evaluatedAt": "2026-11-14 04:27 PM",
+  "evaluatorSource": "heuristic_baseline",
+  "aiModel": null,
+  "innovationScore": null,
+  "noveltyTier": null,
+  "difficultyLevel": null,
+  "difficultyScore": null,
+  "executiveSummary": null,
+  "saved_at": "2026-11-14T16:27:07.611655"
+}

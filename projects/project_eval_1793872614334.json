@@ -1,0 +1,27 @@
+{
+  "id": "eval_1793872614334",
+  "isDemo": false,
+  "title": "Drone Pathology",
+  "description": "Edge drone disease detection for grapes",
+  "problemStatement": "Vineyard crop loss due to unchecked powdery mildew",
+  "domain": "Computer Vision",
+  "targetUsers": "Vineyard farmers",
+  "technologies": "Python, PyTorch, YOLOv8",
+  "model": "Python",
+  "hardware": "Local PC / Cloud GPU Tier",
+  "dataset": "Proposed Project Data Pipeline",
+  "budget": " - ,000",
+  "timeline": "3 - 4 Months",
+  "teamSize": "Small Team (3)",
+  "skillLevel": "Intermediate",
+  "feasibilityScore": 78,
+  "riskLevel": "Low Risk",
+  "riskColor": "text-emerald-500 bg-emerald-500/10 border-emerald-500/30",
+  "primaryRisk": "Minor latency bottlenecks and validation data leakage risks under peak user load.",
+  "fixes": [
+    "Set up automated unit testing and synthetic batch benchmarking.",
+    "Establish cross-validation splits stratified by category."
+  ],
+  "evaluatedAt": "2026-11-05 03:26 PM",
+  "saved_at": "2026-11-05T15:26:54.334624"
+}

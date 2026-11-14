@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # -------------------------------------------------------------
+  # MongoDB Database Service
+  # -------------------------------------------------------------
+  mongodb:
+    image: mongo:7.0
+    container_name: evalai-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: ai_project_evaluator_db
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - evalai-net
+
+  # -------------------------------------------------------------
+  # AI Project Evaluator Full-Stack Web Application Service
+  # -------------------------------------------------------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: evalai-webapp
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - HOST=0.0.0.0
+      - PORT=8000
+      - MONGODB_URL=mongodb://mongodb:27017
+      - DATABASE_NAME=ai_project_evaluator_db
+      - SECRET_KEY=${SECRET_KEY:-evalai_super_secret_production_jwt_key_replace_me_2026}
+      - JWT_ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=1440
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-3.8-flash}
+      - GEMINI_TIMEOUT_SECONDS=15.0
+      - CORS_ORIGINS=*
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - evalai-net
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  evalai-net:
+    driver: bridge

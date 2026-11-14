@@ -1,0 +1,43 @@
+{
+  "id": "eval_1794634574775",
+  "user_id": "usr_1794634574350",
+  "isDemo": false,
+  "title": "Autonomous Drone Crop Pathology Detector",
+  "description": "An edge AI robotics platform deploying deep learning models on embedded drones to detect powdery mildew in vineyards.",
+  "problemStatement": "Manual vineyard inspection takes 4-6 days per hectare, leading to late blight detection and crop destruction.",
+  "domain": "Computer Vision & Autonomous Robotics",
+  "targetUsers": "Vineyard managers, precision agronomists, and crop inspectors",
+  "technologies": "Python, YOLOv8-Nano, OpenCV, PyTorch, Raspberry Pi 4, FastAPI",
+  "model": "Python",
+  "hardware": "Target: $300 - $1,000",
+  "dataset": "Proposed Project Data Pipeline",
+  "budget": "$300 - $1,000",
+  "timeline": "3 - 4 Months",
+  "teamSize": "Small Capstone Team (3 - 4 Students)",
+  "skillLevel": "Intermediate",
+  "feasibilityScore": 69,
+  "riskLevel": "Moderate Risk",
+  "riskColor": "text-amber-500 bg-amber-500/10 border-amber-500/30",
+  "primaryRisk": "Edge CPU inference latency (>2,500ms) will drop frames below real-time operational thresholds.",
+  "fixes": [
+    "Export model weights to ONNX / TensorRT with INT8 quantization for sub-60ms edge inference.",
+    "Implement automated unit testing for ML pipeline preprocessing steps.",
+    "Set up cross-validation splits stratified by category to prevent data leakage."
+  ],
+  "radarScores": {
+    "memory_feasibility": 65,
+    "latency_feasibility": 40,
+    "data_integrity": 80,
+    "cost_viability": 80,
+    "team_capability": 88
+  },
+  "evaluatedAt": "2026-11-14 04:36 PM",
+  "evaluatorSource": "heuristic_baseline",
+  "aiModel": null,
+  "innovationScore": null,
+  "noveltyTier": null,
+  "difficultyLevel": null,
+  "difficultyScore": null,
+  "executiveSummary": null,
+  "saved_at": "2026-11-14T16:36:14.775744"
+}

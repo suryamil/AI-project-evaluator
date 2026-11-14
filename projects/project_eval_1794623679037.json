@@ -1,0 +1,35 @@
+{
+  "id": "eval_1794623679037",
+  "user_id": "usr_1794623678849",
+  "isDemo": false,
+  "title": "Alice Quantum Neural Network for Drug Discovery",
+  "description": "Hybrid classical-quantum variational eigensolver predicting molecular binding affinity.",
+  "problemStatement": "Screening 10M chemical candidates takes 18 months via wet lab methods.",
+  "domain": "Artificial Intelligence & Deep Learning",
+  "targetUsers": "Computational chemists and pharmaceutical researchers",
+  "technologies": "PennyLane, PyTorch, FastAPI, Qiskit, CUDA",
+  "model": "PennyLane",
+  "hardware": "Target: $1,000 - $3,000",
+  "dataset": "Proposed Project Data Pipeline",
+  "budget": "$1,000 - $3,000 (Department Funded)",
+  "timeline": "5 - 8 Months (Senior Thesis)",
+  "teamSize": "Pair Programming Team (2 Students)",
+  "skillLevel": "Advanced (Hands-on PyTorch)",
+  "feasibilityScore": 84,
+  "riskLevel": "Low Risk",
+  "riskColor": "text-emerald-500 bg-emerald-500/10 border-emerald-500/30",
+  "primaryRisk": "Minor throughput degradation under peak concurrency; monitor memory ceilings.",
+  "fixes": [
+    "Implement automated unit testing for ML pipeline preprocessing steps.",
+    "Set up cross-validation splits stratified by category to prevent data leakage."
+  ],
+  "radarScores": {
+    "memory_feasibility": 75,
+    "latency_feasibility": 75,
+    "data_integrity": 90,
+    "cost_viability": 95,
+    "team_capability": 93
+  },
+  "evaluatedAt": "2026-11-14 01:34 PM",
+  "saved_at": "2026-11-14T13:34:39.038813"
+}
